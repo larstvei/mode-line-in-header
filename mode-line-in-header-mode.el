@@ -1,5 +1,4 @@
-;;; mode-line-in-header-mode.el --- Minor mode to display the mode
-;;; line in the header of the current buffer
+;;; mode-line-in-header-mode.el --- Minor mode to display the mode line in the header of the current buffer
 ;; Version: 0.0.20140228
 
 ;; Copyright (C) 2015  Eric Crosson
