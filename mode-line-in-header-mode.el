@@ -47,7 +47,7 @@ current buffer."
   "Minor mode to display the mode line in the header of the current buffer."
   :init-value nil
   :lighter " mode-header"
-  :global t
+  :global nil
   :group 'editing-basics
   (if (not header-line-format)
       (setq header-line-format mode-line-format
