@@ -1,4 +1,4 @@
-;;; mode-line-in-header-mode.el --- Minor mode to display the mode line in the header of the current buffer
+;;; mode-line-in-header.el --- Minor mode to display the mode line in the header of the current buffer
 ;; Version: 0.0.20140228
 
 ;; Copyright (C) 2015  Eric Crosson
@@ -30,7 +30,7 @@
 
 ;;; Usage:
 
-;; (mode-line-in-header-mode 1)
+;; (mode-line-in-header 1)
 
 ;;; Code:
 
@@ -42,7 +42,7 @@ current buffer."
   :group 'editing-basics)
 
 ;;;###autoload
-(define-minor-mode mode-line-in-header-mode
+(define-minor-mode mode-line-in-header
   "Minor mode to display the mode line in the header of the current buffer."
   :init-value nil
   :lighter " mode-header"
@@ -55,6 +55,6 @@ current buffer."
           header-line-format nil))
   (set-window-buffer nil (current-buffer)))
 
-(provide 'mode-line-in-header-mode)
+(provide 'mode-line-in-header)
 
-;;; mode-line-in-header-mode.el ends here
+;;; mode-line-in-header.el ends here
