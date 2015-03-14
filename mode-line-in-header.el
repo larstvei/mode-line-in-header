@@ -55,6 +55,12 @@ current buffer."
           header-line-format nil))
   (set-window-buffer nil (current-buffer)))
 
+;;;###autoload
+(define-globalized-minor-mode
+  global-mode-line-in-header
+  mode-line-in-header
+  (lambda () (mode-line-in-header 1)))
+
 (provide 'mode-line-in-header)
 
 ;;; mode-line-in-header.el ends here
